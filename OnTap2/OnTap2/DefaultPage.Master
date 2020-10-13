@@ -1,0 +1,54 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="DefaultPage.master.vb" Inherits="OnTap2.DefaultPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="container">
+                <h1>My project web</h1>
+                <nav>
+                    <ul>
+                        <li><a href="danhsach.aspx">Danh sách sinh viên</a></li>
+                        <li><a href="themsv.aspx">Thêm sinh viên</a></li>
+                        <li><a href="suasv.aspx">Sửa sinh viên</a></li>
+                        <li><a href="binhphuong.aspx">Tính bình phương</a></li>
+                        <li><a href="danhsach.aspx">Hướng dẫn</a></li>
+                    </ul>
+                </nav>
+                <aside>
+                    <img src="" alt="photo" height="200" width="200" />
+                    <h3>Links</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Tutorial</li>
+                        <li>Download</li>
+                        <li>Help</li>
+                    </ul>
+                </aside>
+                <section id="main">
+                    <asp:ContentPlaceHolder ID="noidung" runat="server" />
+                </section>
+                <footer>
+                    Vũ Văn Hùng
+                </footer>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
